@@ -7,9 +7,9 @@ class Solution:
             if slow == fast:
                 break
             
-        slow2 = 0
+        slow = 0
         while True:
             slow = nums[slow]
-            slow2 = nums[slow2]
-            if slow == slow2:
+            fast = nums[fast]
+            if slow == fast:
                 return slow
