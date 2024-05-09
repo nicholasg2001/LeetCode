@@ -9,40 +9,45 @@
  * }
  */
 class Solution {
-    
-    public int calculateTwinSum(int[] arr, int i){
-        int twin = arr.length - 1 - i;
-        return arr[i] + arr[twin];
-    }
-    
     public int pairSum(ListNode head) {
-        
-        ListNode dummy = head;
-        
-        int count = 1;
-        while(head.next != null){
-            head = head.next;
-            count++;
+        //find the middle of the linked list
+        if(head==null){
+            return 0;
         }
-        
-        int[] arr = new int[count];
-        int idx = 0;
-        while(dummy != null){
-            arr[idx] = dummy.val;
-            dummy = dummy.next;
-            idx++;
+        int max=0;
+        ListNode slow=head;
+        ListNode fast=head;
+
+        while(fast!=null && fast.next!=null && fast.next.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
         }
-        
-        
-        int max = 0;
-        for(int i=0;i<arr.length;i++){
-            int currSum = calculateTwinSum(arr, i);
-            if(currSum > max){
-                max = currSum;
-            }
+
+        slow.next=reverse(slow.next);
+        // reverse the remaining half of the list
+        ListNode start=head;
+
+        while(slow.next!=null){
+            // start comparing the start and reversed string heads
+            max=Math.max(start.val+slow.next.val,max);
+            start=start.next;
+            slow=slow.next;
         }
+
         return max;
-        
-        
+    }
+    private ListNode reverse(ListNode head){
+        ListNode prev=null;
+        ListNode cur=head;
+        ListNode next=head;
+
+        while(next!=null){
+            next=cur.next;
+            cur.next=prev;
+            prev=cur;
+            cur=next;
+        }
+
+        return prev;
     }
 }
