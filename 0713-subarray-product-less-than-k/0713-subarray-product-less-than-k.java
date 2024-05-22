@@ -13,7 +13,7 @@ class Solution {
             curr *= nums[right];
             
             while(curr >= k){
-                curr = Math.floorDiv(curr, nums[left]);
+                curr /= nums[left];
                 left++;
             }
             
