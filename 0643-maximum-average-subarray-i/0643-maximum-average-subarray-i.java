@@ -1,18 +1,18 @@
-class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
-         # Initialize currSum and maxSum to the sum of the initial k elements
-        currSum = maxSum = sum(nums[:k])
-
-        # Start the loop from the kth element 
-        # Iterate until you reach the end
-        for i in range(k, len(nums)):
-
-            # Subtract the left element of the window
-            # Add the right element of the window
-            currSum += nums[i] - nums[i - k]
+class Solution {
+    public double findMaxAverage(int[] nums, int k) {
+        
+        double currSum = 0;
+        for(int i=0;i<k;i++){
+            currSum+= nums[i];
+        }
+        
+        double max = currSum;
+        
+        for(int j=k;j<nums.length;j++){
+            currSum += nums[j] - nums[j-k];
             
-            # Update the max
-            maxSum = max(maxSum, currSum)
-
-        # Since the problem requires average, we return the average
-        return maxSum / k
+            max = Math.max(currSum, max);
+        }
+        return max / k;
+    }
+}
