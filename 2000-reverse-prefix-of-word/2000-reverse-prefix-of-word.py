@@ -1,8 +1,6 @@
 class Solution:
     
-    
-    def reversePrefix(self, word: str, ch: str) -> str:
-        
+    def reversePrefix(self, word: str, ch: str) -> str:    
         l = 0
         for i in range(len(word)):
             
