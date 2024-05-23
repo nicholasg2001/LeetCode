@@ -15,7 +15,6 @@ class Solution:
         
         for i in range(k+1, max_):
             currSum += nums[i+k] - nums[i-k-1]
-            print(currSum)
             res[i] = currSum // ((2*k) + 1)
         
         return res
