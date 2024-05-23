@@ -17,17 +17,7 @@ class Solution:
                 return "".join(word)
         
         return word
-    
-    def reverseString(word: str, l: int, r: int) -> str:            
-            while(l < r):
-                temp = word[l]
-                word[l] = word[r]
-                word[r] = temp
-                r-=1
-                l+=1
 
-            return word
-        
 
     
     
