@@ -9,7 +9,6 @@ class Solution {
         while(left <= right){
             
             mid = left + Math.floorDiv((right - left), 2);
-            System.out.println(mid);
             
             if(Math.pow(mid, 2) > x){
                 right = mid -1;
