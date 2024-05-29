@@ -1,18 +1,32 @@
 class Solution {
-    public String[] divideString(String s, int k, char fill) {
+    public String[] divideString(String str, int k, char fill) {
     
-        if(s.length()%k>0){
-            for(int i=0; i<s.length()%k; i++){
-                s+=fill;
-            }
-        }
+       // return if k and str are same
+	if (str.length() == k)
+		return new String[] { str };
 
-        String[] res = new String[s.length()/k];  
-        int index = 0; 
-        for(int i = 0; i < s.length(); i+=k){
-            res[index] = s.substring(i, i+k); 
-            index++;
-        }
-        return res;
+	int index = 0;
+	int stringLength = str.length();
+	StringBuilder sb = new StringBuilder(str);
+	
+	// find size of array creation
+	String[] strArr = (stringLength % k == 0) ? new String[stringLength / k] : new String[(stringLength / k) + 1];
+
+	//append fill after str 
+	if (stringLength % k != 0) {
+		for (int i = 0; i < k - (stringLength % k); i++) {
+			sb.append(fill);
+		}
+	}
+
+	//divide into k
+	for (int i = 0; i < sb.length(); i += k) {			
+		strArr[index] = (sb.substring(i, i + k));
+		++index;
+
+	}
+
+	return strArr;
+
     }
 }
