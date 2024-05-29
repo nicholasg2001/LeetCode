@@ -4,10 +4,6 @@ class Solution:
         
         n = len(s)
         res = []
-
-        if(n < 3):
-            return res
-        
         i=0
         for r in range(n):
             if r == n-1 or s[r] != s[r+1]:
