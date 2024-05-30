@@ -1,8 +1,21 @@
 class Solution {
     public int majorityElement(int[] nums) {
         
-        Arrays.sort(nums);
+        int res = 0;
+        int count = 0;
         
-        return nums[Math.floorDiv(nums.length, 2)];
+        for(int n : nums){
+            
+            if(count == 0){
+                res = n;
+            }
+            
+            if(res == n){
+                count+=1;
+            } else {
+                count-=1;
+            }
+        }
+        return res;
     }
 }
