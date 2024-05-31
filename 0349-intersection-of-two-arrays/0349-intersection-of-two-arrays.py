@@ -13,6 +13,6 @@ class Solution:
             if num in map_:
                 res.append(num)
                 del map_[num]
-        
+            
         return res
         
