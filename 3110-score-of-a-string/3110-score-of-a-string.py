@@ -7,8 +7,6 @@ class Solution:
 
         while(i < len(s)):
           res+= abs((ord(s[l]) - ord(s[i])))
-          print(s[l])
-          print(s[i])
           l+=1
           i+=1
           
