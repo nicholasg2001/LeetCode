@@ -2,7 +2,7 @@ class Solution:
     def shortestToChar(self, s: str, c: str) -> List[int]:
         
         idx_of_c = []
-        res = []
+        result = []
 
         for i, char in enumerate(s):
             if char == c:
