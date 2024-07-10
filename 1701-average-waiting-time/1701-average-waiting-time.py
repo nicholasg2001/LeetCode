@@ -5,11 +5,11 @@ class Solution:
         current_time = 0
 
 
-        for arrival, customer in customers:
+        for arrival, time in customers:
             if current_time < arrival:
                 current_time = arrival
-            waiting_time = current_time - arrival + customer
+            waiting_time = current_time - arrival + time
             total_waiting_time += waiting_time
-            current_time += customer
+            current_time += time
         
         return total_waiting_time / len(customers)
