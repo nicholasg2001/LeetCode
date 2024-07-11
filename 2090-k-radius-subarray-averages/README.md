@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/k-radius-subarray-averages/">2090. K Radius Subarray Averages</a></h2><h3>Medium</h3><hr><div><p>You are given a <strong>0-indexed</strong> array <code>nums</code> of <code>n</code> integers, and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/k-radius-subarray-averages">2090. K Radius Subarray Averages</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> array <code>nums</code> of <code>n</code> integers, and an integer <code>k</code>.</p>
 
 <p>The <strong>k-radius average</strong> for a subarray of <code>nums</code> <strong>centered</strong> at some index <code>i</code> with the <strong>radius</strong> <code>k</code> is the average of <strong>all</strong> elements in <code>nums</code> between the indices <code>i - k</code> and <code>i + k</code> (<strong>inclusive</strong>). If there are less than <code>k</code> elements before <strong>or</strong> after the index <code>i</code>, then the <strong>k-radius average</strong> is <code>-1</code>.</p>
 
@@ -12,8 +12,9 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/11/07/eg1.png" style="width: 343px; height: 119px;">
-<pre><strong>Input:</strong> nums = [7,4,3,9,1,8,5,2,6], k = 3
+<img alt="" src="https://assets.leetcode.com/uploads/2021/11/07/eg1.png" style="width: 343px; height: 119px;" />
+<pre>
+<strong>Input:</strong> nums = [7,4,3,9,1,8,5,2,6], k = 3
 <strong>Output:</strong> [-1,-1,-1,5,4,4,-1,-1,-1]
 <strong>Explanation:</strong>
 - avg[0], avg[1], and avg[2] are -1 because there are less than k elements <strong>before</strong> each index.
@@ -26,7 +27,8 @@
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums = [100000], k = 0
+<pre>
+<strong>Input:</strong> nums = [100000], k = 0
 <strong>Output:</strong> [100000]
 <strong>Explanation:</strong>
 - The sum of the subarray centered at index 0 with radius 0 is: 100000.
@@ -35,7 +37,8 @@
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> nums = [8], k = 100000
+<pre>
+<strong>Input:</strong> nums = [8], k = 100000
 <strong>Output:</strong> [-1]
 <strong>Explanation:</strong> 
 - avg[0] is -1 because there are less than k elements before and after index 0.
@@ -49,4 +52,3 @@
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= nums[i], k &lt;= 10<sup>5</sup></code></li>
 </ul>
-</div>
