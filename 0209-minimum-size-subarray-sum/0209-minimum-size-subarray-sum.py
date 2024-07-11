@@ -12,9 +12,6 @@ class Solution:
                 ans = min(ans, right-left+1)
                 total -= nums[left]
                 left += 1
-            else:
-                right += 1
-            
         
         return 0 if ans == float('inf') else ans
                 
