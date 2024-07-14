@@ -6,17 +6,18 @@
 class Solution:
     def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
 
-        dummy = ListNode()
-        curr = dummy
-        head = head.next
-        sum_ = 0
+        l = head
+        r = head.next
 
-        while head:
-            if head.val == 0:
-                curr.next = ListNode(sum_)
-                curr = curr.next
-                sum_ = 0
-            sum_ += head.val
-            head = head.next
-
-        return dummy.next
+        sum = 0
+        while r:
+            if r.val == 0:
+                l = l.next
+                l.val = sum
+                sum = 0
+            else:
+                sum += r.val
+            r = r.next
+        
+        l.next = None
+        return head.next
