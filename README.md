@@ -28,4 +28,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/nicholasg2001/LeetCode/tree/master/0001-two-sum) |
+## String
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/nicholasg2001/LeetCode/tree/master/0014-longest-common-prefix) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/nicholasg2001/LeetCode/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
