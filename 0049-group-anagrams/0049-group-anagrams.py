@@ -1,15 +1,17 @@
-from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        anagrams_dict = defaultdict(list)
+
+        res = {}
+
         for s in strs:
             count = [0] * 26
             for c in s:
-                #associate character with index via ASCII 
                 count[ord(c) - ord('a')] += 1
 
-            #make it a tuple because key has to be immutable
             key = tuple(count)
-            anagrams_dict[key].append(s)
+            if key in res:
+                res[key].append(s)
+            else:
+                res[key] = [s]
         
-        return anagrams_dict.values()
+        return res.values()
