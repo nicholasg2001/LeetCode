@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/nicholasg2001/LeetCode/tree/master/0001-two-sum) |
 | [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
+| [0055-jump-game](https://github.com/nicholasg2001/LeetCode/tree/master/0055-jump-game) |
 | [0200-number-of-islands](https://github.com/nicholasg2001/LeetCode/tree/master/0200-number-of-islands) |
 ## Depth-First Search
 |  |
@@ -63,4 +64,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/nicholasg2001/LeetCode/tree/master/0055-jump-game) |
+## Greedy
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/nicholasg2001/LeetCode/tree/master/0055-jump-game) |
 <!---LeetCode Topics End-->
