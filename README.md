@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/nicholasg2001/LeetCode/tree/master/0001-two-sum) |
+| [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
 | [0200-number-of-islands](https://github.com/nicholasg2001/LeetCode/tree/master/0200-number-of-islands) |
 ## Depth-First Search
 |  |
@@ -23,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
 | [0200-number-of-islands](https://github.com/nicholasg2001/LeetCode/tree/master/0200-number-of-islands) |
 ## Hash Table
 |  |
@@ -50,4 +52,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0191-number-of-1-bits](https://github.com/nicholasg2001/LeetCode/tree/master/0191-number-of-1-bits) |
+## Math
+|  |
+| ------- |
+| [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
 <!---LeetCode Topics End-->
