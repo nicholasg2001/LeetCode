@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/nicholasg2001/LeetCode/tree/master/0001-two-sum) |
 | [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
 | [0200-number-of-islands](https://github.com/nicholasg2001/LeetCode/tree/master/0200-number-of-islands) |
 ## Depth-First Search
 |  |
@@ -31,11 +32,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/nicholasg2001/LeetCode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nicholasg2001/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
 ## String
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/nicholasg2001/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0014-longest-common-prefix](https://github.com/nicholasg2001/LeetCode/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
 ## Trie
 |  |
 | ------- |
@@ -56,4 +59,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/nicholasg2001/LeetCode/tree/master/0048-rotate-image) |
+## Sorting
+|  |
+| ------- |
+| [0049-group-anagrams](https://github.com/nicholasg2001/LeetCode/tree/master/0049-group-anagrams) |
 <!---LeetCode Topics End-->
