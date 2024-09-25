@@ -1,10 +1,13 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
+        
+        sum_ = sum(nums)
+        
+        n = len(nums)
 
-        nums.sort()
+        sum_nums = (n*(n+1)) // 2
 
-        for i in range(len(nums)+1):
-            if i not in nums:
-                return i 
+        
+        return sum_nums - sum_
 
         
